@@ -1,32 +1,31 @@
-# Spark Coding Practice – Preparation Guide
+# 🚀 Spark Coding Practice – Preparation Guide
 
-This guide explains how to search datasets on Kaggle, practice Spark using Python notebooks, and track progress with Git and GitHub.
+This guide explains how to search datasets on Kaggle, practice Spark using Python notebooks, and track progress with Git & GitHub.
 
 ---
 
-## 1️⃣ Finding Datasets on Kaggle
+## 📂 1️⃣ Finding Datasets on Kaggle
 
 Kaggle provides diverse datasets ideal for Spark learning.
 
 ### Steps:
-1. Visit Kaggle → **Datasets**
-2. Search using keywords:
-   - big data, logs, transactions, retail, streaming, finance
-3. Prefer medium–large datasets (100MB+ for Spark)
-4. Download the datasets
+1. Go to Kaggle → **Datasets**
+2. Search using helpful keywords:  
+   `big data`, `logs`, `transactions`, `retail`, `streaming`, `finance`
+3. Prefer datasets larger than **100MB**
+4. Download the datasets into the `data/` folder
 
 ---
 
-## 2️⃣ Setting Up Spark Notebook Workspace
+## 💻 2️⃣ Setting Up Spark Notebook Workspace
 
-Choose any of the below for PySpark/Scala Spark practice:
+You can practice Spark using:
 
-- vscode
-- Jupyter Notebook
-- Google Colab (Install Spark runtime)
+- **VS Code**
+- **Jupyter Notebook**
+- **Google Colab** (requires Spark setup)
 
-### Recommended Structure:
-- create a folder structure in your local setup
+### 📁 Recommended Folder Structure
 
 spark-practice/
 │
@@ -35,48 +34,47 @@ spark-practice/
 ├── src/ # Reusable Spark code
 └── README.md
 
----
-
-## 🚀 3️⃣ Version Control Using Git & GitHub
-
-Track changes to notebooks and scripts.
-
-# 🛠️ How to Create a Repository in GitHub
-
-Follow these steps to create and set up a new GitHub repository:
+yaml
+Copy code
 
 ---
 
-## 1️⃣ Sign In to GitHub
+## 🛠️ 3️⃣ Version Control Using Git & GitHub
 
+Track notebook improvements using Git versioning.
+
+---
+
+# 🧩 How to Create a Repository in GitHub
+
+### Step 1: Sign In
 - Open: https://github.com  
 - Log in with your account
 
----
-
-## 2️⃣ Create a New Repository
-
-1. Click the **+** icon in the top-right  
-2. Select **New repository**
-3. Fill in the details:
-   - **Repository Name** → example: `spark-practice`
-   - (Optional) **Description**
-   - Choose **Public** (recommended for learning) or **Private**
+### Step 2: Create a New Repository
+1. Click the **+** → **New repository**
+2. Enter details:
+   - **Repository Name** → `spark-practice`
+   - Add description (optional)
+   - Select **Public** (recommended) or **Private**
+3. Click **Create repository** 🎉
 
 ---
 
-🎉 Finally, click **Create repository** to finish!
+## 📌 First-Time Git Setup (Local → GitHub)
 
-### First-time Setup:
-
-create a file with filename as ".gitignore" inside spark-practice folder
-Inside the file write the below text to avoid pushing large dataset to git repo
+1. Create a `.gitignore` file inside the `spark-practice` folder  
+   Add this content:
 
 data/*
 
-1) Open spark-practice folder in vscode 
-2) press (control + ~). It opens terminal or power shell based on your OS.
-3) Enter the below commands to initialize a new repository locally, perform initial commit and push to remote repository.
+sql
+Copy code
+
+2. Open **VS Code**
+3. Open Terminal (`Ctrl + ~`)
+
+4. Run the commands:
 
 ```bash
 git init
@@ -84,39 +82,32 @@ git remote add origin <your-repo-url>
 git add .
 git commit -m "Initial commit: Project structure + dataset added"
 git push -u origin main
-
-Updating Notebooks
-Whenever you add new Spark logic:
+✍️ Updating Notebooks in Git
+Whenever you improve or modify a notebook:
 
 bash
 Copy code
 git add notebooks/<filename>.ipynb
 git commit -m "Enhanced: Added DataFrame operations practice"
 git push
-
-To avoid storing heavy data files, add a .gitignore:
-
-powershell
-Copy code
-data/*
-!data/README.md     # Keep placeholder file only
-🧪 Suggested Learning Roadmap
-Week	Focus Area	Example Practice Dataset
-1	RDDs, Basic DF Operations	Retail sales logs
+📆 Suggested Learning Roadmap
+Week	Focus Area	Example Dataset
+1	RDDs, Basic DataFrame Ops	Retail sales logs
 2	Joins, GroupBy, Window Functions	Stock time series
-3	Spark SQL + UDFs	Movie ratings
+3	Spark SQL, UDFs	Movie ratings
 4	MLlib Pipelines	E-commerce records
 5	Structured Streaming	Clickstream / IoT events
 
-Commit after each week:
+Commit after each milestone:
 
 bash
 Copy code
 git commit -m "Completed Week 2: Window queries"
-🎯 Objectives of the Repo
-Strengthen Spark data engineering skills
+🎯 Objectives of This Repo
+Improve Spark data engineering skills
 
 Build real-world data transformation notebooks
 
 Maintain a clean, evolving Git history
 
+Happy Learning! 🔥🚀

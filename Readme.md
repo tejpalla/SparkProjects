@@ -11,7 +11,7 @@ Kaggle provides diverse datasets ideal for Spark learning.
 ### Steps:
 1. Go to Kaggle → **Datasets**
 2. Search using helpful keywords:  
-   `big data`, `logs`, `transactions`, `retail`, `streaming`, `finance`
+   `big data`, `logs`, `transactions`, `retail`, `streaming`, `finance`, `supplychain`
 3. Prefer datasets larger than **100MB**
 4. Download the datasets into the `data/` folder
 
@@ -27,23 +27,18 @@ You can practice Spark using:
 
 ### 📁 Recommended Folder Structure
 
-spark-practice/
-│
-├── data/ # Kaggle datasets
-├── notebooks/ # Spark notebooks
-├── src/ # Reusable Spark code
-└── README.md
-
-yaml
-Copy code
+spark-practice/  
+│  
+├── data/ # Kaggle datasets  
+├── notebooks/ # Spark notebooks  
+├── src/ # Reusable Spark code  
+└── README.md  
 
 ---
 
 ## 🛠️ 3️⃣ Version Control Using Git & GitHub
 
 Track notebook improvements using Git versioning.
-
----
 
 # 🧩 How to Create a Repository in GitHub
 
@@ -52,7 +47,7 @@ Track notebook improvements using Git versioning.
 - Log in with your account
 
 ### Step 2: Create a New Repository
-1. Click the **+** → **New repository**
+1. Click the **+** on top right corner and then → **New repository** 
 2. Enter details:
    - **Repository Name** → `spark-practice`
    - Add description (optional)
@@ -66,10 +61,7 @@ Track notebook improvements using Git versioning.
 1. Create a `.gitignore` file inside the `spark-practice` folder  
    Add this content:
 
-data/*
-
-sql
-Copy code
+   data/*
 
 2. Open **VS Code**
 3. Open Terminal (`Ctrl + ~`)
@@ -82,32 +74,32 @@ git remote add origin <your-repo-url>
 git add .
 git commit -m "Initial commit: Project structure + dataset added"
 git push -u origin main
+```
+
 ✍️ Updating Notebooks in Git
 Whenever you improve or modify a notebook:
 
-bash
-Copy code
-git add notebooks/<filename>.ipynb
+```bash
+git add .
 git commit -m "Enhanced: Added DataFrame operations practice"
 git push
-📆 Suggested Learning Roadmap
-Week	Focus Area	Example Dataset
-1	RDDs, Basic DataFrame Ops	Retail sales logs
-2	Joins, GroupBy, Window Functions	Stock time series
-3	Spark SQL, UDFs	Movie ratings
-4	MLlib Pipelines	E-commerce records
-5	Structured Streaming	Clickstream / IoT events
+```
+
+📆 Suggested Learning Roadmap  
+Week	Focus Area	Example Dataset  
+1	RDDs, Basic DataFrame Ops	Retail sales logs   
+2	Joins, GroupBy, Window Functions	Stock time series   
+3	Spark SQL, UDFs	Movie ratings  
+4	MLlib Pipelines	E-commerce records   
+5	Structured Streaming	Clickstream / IoT events   
 
 Commit after each milestone:
 
-bash
-Copy code
+```bash
 git commit -m "Completed Week 2: Window queries"
+```
+
 🎯 Objectives of This Repo
 Improve Spark data engineering skills
 
 Build real-world data transformation notebooks
-
-Maintain a clean, evolving Git history
-
-Happy Learning! 🔥🚀
